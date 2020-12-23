@@ -31,7 +31,7 @@ addInventory = () =>{
         total = total.toFixed(2);     
         let newInventory = {
             product : product,
-            price : quantity,
+            price : price,
             quantity : quantity,
             total : total
         }
