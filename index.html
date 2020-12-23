@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ress/css/style.css">
+    <link rel="stylesheet" href="ress/css/responsive.css">
+    <title>Inventry App
+    </title>
+</head>
+<body>
+    <section id="header">
+    <h1>Syntax Inventory System</h1>
+    </section>
+
+    <section id="invent-form">
+        <div class="invent">
+            <div class="d-flex" >
+                <div>
+                    <h4>Products</h4>
+                    <input type="text" placeholder="product" id="product">
+                </div>
+                <div>
+                    <h4>Price</h4>
+                    <input type="text" value="0" placeholder="price" id="price" onchange="getTotal()"> 
+                </div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <h4>Quantity</h4>
+                    <input type="text" value="0" placeholder="quantity" id="quantity" onchange="getTotal()">
+                </div>
+                <div>
+                    <h4>Total</h4>
+                    <input type="text" placeholder="0" readonly value="0" id="total">
+                </div>
+            </div>
+            <div class="text-center">
+                <button onclick="addInventory()">Add Record</button>
+            </div> 
+        </div>
+    </section>
+
+    <section id="invent-table">
+        <div class="table" >
+            <div class="d-flex-between">
+                <div>
+                    <h1>My Inventory</h1>
+                </div>
+                <div>
+                    <button class="clear" onclick="clearButton()">Clear Inventory</button>
+                    <button class="print" onclick="printData()">Print/Download</button>
+                </div>
+            </div>
+
+
+            
+            
+            <div class="table-responsive" id="allInventory">
+                <table width="100%" border="1" id="inventoryTable">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th >Take Action</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            Grand Total
+                        </th>
+                        <td id="grandTotal" colspan="2" class="font-weight-bold"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        &copy; Syntax | All Right Reserved <br>
+        Designed and Developed with love by Emily Racheal for Syntax <br>
+        Free to use by all
+    </footer>
+
+    <script src="ress/js/script.js"></script>
+
+    
+</body>
+</html

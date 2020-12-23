@@ -1,0 +1,56 @@
+@media only screen and (max-width: 768px) {
+    .d-flex{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    } 
+    section#invent-form .invent{
+        padding: 10%;
+        width: 80%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: #bbbbbb;
+        padding-top: 50px;   
+    }
+
+    section#invent-form .invent  input{
+        min-width: 90% !important;
+        padding: 15px;
+        outline-color: #bbbbbb;
+        border:1px solid  #bbbbbb;
+        color:  #bbbbbb;
+        margin-bottom: 20px;
+    }
+
+    section#invent-form .invent > div{
+        margin-bottom: 0px;
+    }
+
+    button{
+        padding: 20px 50px;
+        background-color:#0a043c;
+        border: none;
+        color: #bbbbbb;
+        font-weight: 900;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    section#invent-table .table{
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        padding: 20px;
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: #0a043c;
+        color: #fff;
+        flex-direction: column; 
+        
+    }
+    .table-responsive{
+        overflow-x: scroll;
+    }
+}
+    
